@@ -8,14 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,200;1,400&display=swap" rel="stylesheet">
     <title>Dev.Finance$</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
  
     <header>
-      <a href="index.html">
-        <img src="assets/logo.svg" alt="Logo devFinance  ">
-      </a>
+      <div class="header">
+        <a href="index.html">
+          <img src="assets/logo.svg" alt="Logo devFinance  ">
+        </a>
+  
+        <a href="#" class="button new" onclick="Modal.toggle()">+ Nova Transação</a>
+      </div>
     </header>
 
     <main class="container">
@@ -54,7 +58,6 @@
       <section id="transaction">
         <h2 class="sr-only">Transações</h2>
         
-        <a href="#" class="button new" onclick="Modal.toggle()">+ Nova Transação</a>
         <table id="data-table">
           <thead>
             <tr>
@@ -106,6 +109,6 @@
       <p>Dev.finance$</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

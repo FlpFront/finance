@@ -45,23 +45,25 @@ h2{
     font-weight: normal;
 }
 
-
 /*======================== LINKS AND BUTTONS =======================*/
 
 a.button{
     text-decoration: none;
-    color: #49aa26;
+    color: #fff;
+    background: #49aa26;
+    padding: 10px 15px;
+    border-radius: 3px;
+    transition: .4s;
 }
 
 a.button:hover{
-    color: var(--green);
+    background: #58bd33;
 }
 
 a.button.new{
     display: inline-block;
     margin-bottom: 0.8rem;
 }
-
 
 /*======================== CARDS =======================*/
 
@@ -99,11 +101,18 @@ header{
     text-align: center;
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(90vw, 800px);
+    margin: 0 auto;
+}
+
 #logo{
     color: #fff;
     font-weight: 100;
 }
-
 
 /*======================== BALANCE =======================*/
 
@@ -116,7 +125,6 @@ header{
     color: #fff;
     margin-top: 0;
 }
-
 
 /*======================== TABLE =======================*/
 #transaction{
@@ -134,7 +142,6 @@ header{
 #data-table:hover{
     color: #363f5f;
 }
-
 
 table th{
     background: #fff;
@@ -187,7 +194,6 @@ td.expense{
     color: #e92929;
 }
 
-
 /*======================== MODAL =======================*/
 
 .modal-overlay{
@@ -217,11 +223,11 @@ td.expense{
 
 /*======================== FORM =======================*/
 
-.form{
+#form{
     max-width: 500px;
 }
 
-.form h2{
+#form h2{
     margin-top: 0;
 }
 
